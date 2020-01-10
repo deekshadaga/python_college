@@ -1,0 +1,33 @@
+#print("hello world")
+#enter variable a
+num_a=int(input("enter a number"))
+print(num_a)
+print(type(num_a))
+#enter variable b
+num_b=int(input("enter a number"))
+print(num_b)
+print(type(num_b))
+#perform arithematic operations
+print("addition:",num_a+num_b)
+print("subtraction:",num_a-num_b)
+print("multiplication:",num_a*num_b)
+print("division:",num_a/num_b)
+print("floor division:",num_a//num_b)
+print("mod:",num_a%num_b)
+print("power:",num_a**num_b)
+#perform comparison operations
+print("equal:",num_a==num_b)
+print("not equal:",num_a!=num_b)
+print("less or equal:",num_a<=num_b)
+print("more or equal:",num_a>=num_b)
+print("less:",num_a<num_b)
+print("greater:",num_a>num_b)
+"""
+#wap to calculate area of a circle
+#enter radius
+r=float(input("enter a radius: "))
+area=3.14*r*r;
+print(area)
+
+#wap to calculate student result based on 2 examinations(100) ,1 sport event(50) and 3 
+#activities(20) conducted the weight of activity =30% & weight of sport=20% and exam=50% 
