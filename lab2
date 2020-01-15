@@ -1,0 +1,95 @@
+unary operator --> -(dont have == or --)
+assignment operators --> +=,-=,*=,/=,%=,//=,**=,&=,|=,^=,>>=,<<=
+bitwise operators -->
+	and --> &
+	or --> |
+	not --> ~(returns 1s complement)
+	xor --> ^
+shift operators -->
+	right shift --> >> (half value)
+	left shift --> << (double value)
+logical operators --> &&,||,! // they are not workinggggg
+membership operators --> in,not in
+identity operators --> is , is not
+
+
+programs -->
+
+for operators :
+
+#taking values
+a= int(input("enter value of a :"))
+b= int(input("enter value of b :"))
+#bitwise operators
+print (a&b)
+print (a|b)
+print (a^b)
+print (~a)
+print (a<<1)
+print (a>>1)
+print (a>>2)
+print (a<<2)
+#assignment operators
+a+=b
+print (a)
+a-=b
+print (a)
+a*=b
+print (a)
+a/=b
+print (a)
+a%=b
+print (a)
+#unary operator 
+print(-a)
+
+
+
+# wap to increment a no if it is positive
+
+n=int(input("enter a number :"))
+if(n>=0):
+    n+=1
+    print(n)
+
+
+# wap to determine the character entered by the user
+
+a=input("enter a value : ")
+if(a.isupper()):
+    print(" upper alphabet")
+if(a.islower()):
+    print(" lower alphabet")
+if(a.isalpha()):
+    print(" alphabet")
+if(a.isnumeric()):
+    print(" number")
+if(a.isdigit()):
+    print(" number")
+    
+# wap to check if a person is eligible to vote or not if not eligible then display how many years are left to be eligible 
+
+age=int(input("enter your age : "))
+if(age>=18):
+    print("eligible for vote")
+else:
+    print("after",18-age,"years ,you will be eligible for vote" )
+
+
+# wap to enter any character if the entered character is in lower case then convert it into uppercase and if it is an uppercase character then convert it into lowercase
+
+ch=input("enter any character : ")
+if(ch>='A' and ch<='Z'):
+    print(ch.lower())
+else:
+    print(ch.upper())
+
+
+or 
+
+
+ch=input("enter any character : ")
+if(ch>='A' & ch<='Z'):
+    print(ch.lower())
+else:
+    print(ch.upper())
