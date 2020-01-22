@@ -32,7 +32,7 @@ if(rev==n):
 else:
     print("not palindrome no.")
 
-#wap to check if a no. is armstrong or not
+#wap to get sum of digits
 rem=0
 sum=0
 n=int(input("enter a no: "))
@@ -43,4 +43,7 @@ while(temp>0):
     temp=temp//10
 print(sum)
 
+#wap to use .format
+n=int(input("enter a number: "))
+print("your no. is : {}".format(n))
 
