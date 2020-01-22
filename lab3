@@ -1,0 +1,46 @@
+#wap to print 1 to 10 using while loop
+i=0
+while(i<10):
+    i+=1
+    print(i)
+
+#wap to check if a no. is armstrong or not
+rem=0
+sum=0
+n=int(input("enter a no: "))
+temp=n
+while(temp>0):
+    rem=temp%10
+    temp=temp//10
+    sum=sum+rem**3
+if(sum==n):
+    print("armstrong number")
+else:
+    print("not armstrong no.")
+    
+#wap to check if a no. is armstrong or not
+rem=0
+rev=0
+n=int(input("enter a no: "))
+temp=n
+while(temp>0):
+    rem=temp%10
+    rev=rev*10+rem
+    temp=temp//10
+if(rev==n):
+    print("palindrome number")
+else:
+    print("not palindrome no.")
+
+#wap to check if a no. is armstrong or not
+rem=0
+sum=0
+n=int(input("enter a no: "))
+temp=n
+while(temp>0):
+    rem=temp%10
+    sum+=rem
+    temp=temp//10
+print(sum)
+
+
