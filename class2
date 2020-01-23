@@ -1,0 +1,27 @@
+#wap to get binary form of a no
+rem=0
+res=0
+i=0
+n=int(input("enter a no: "))
+temp=n
+while(temp>0):
+    rem=temp%2
+    res=res+(rem*(10**i))
+    temp=temp//2
+    i+=1
+print(res)   
+
+for i in range(10,1):
+    print(i)
+
+#wap to classify if a given no. is prime or composite
+n=int(input("enter a no : "))
+check=0
+for i in range (2,n):
+    if(n%i==0):
+        check+=1
+        break;
+if(check!=0):
+    print("composite no.")
+else:
+    print("prime no.")
