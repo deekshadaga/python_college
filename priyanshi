@@ -1,0 +1,87 @@
+"""num = int(input("enter the number"))
+sum = 0
+i=0
+while(i<=num):
+  sum+=i
+  i+=1
+print(sum)
+avg=sum/num
+print(avg ) 
+
+################################################
+ 
+rem=0
+sum=0
+n=int(input("enter a no: "))
+temp=n
+while(temp>0):
+    rem=temp%10
+    temp=temp//10
+    sum=sum+rem**3
+if(sum==n):
+    print("armstrong number")
+else:
+    print("not armstrong no.")
+      
+####################################################
+
+
+num = int(input("enter the number: "))
+for i in range(1,11):
+   print("{} * {}= {}".format(num , i, num*i))    
+     
+   
+ #########################################################
+
+
+n=int(input("enter a no : "))
+#check=0
+for i in range (2,n):
+    if(n%i==0):
+        #check+=1
+        print("number is composite")
+        break;
+#if(check!=0):
+    #print("composite no.")
+else:
+    print("prime no.")
+       
+####################################################################    
+  
+num=int(input("enter the number"))
+for i in range (1,11):
+  print(i)
+  
+############################################################
+
+#wap to get binary form of a no
+
+rem=0
+res=0
+i=0
+n=int(input("enter a no: "))
+t=n
+while(t>0):
+    rem=t%2
+    res=res+(rem*(10**i))
+    t=t//2
+    i+=1
+print(res)
+
+
+ ############################################################
+ 
+num = int(input("enter the number"))
+sum = 0
+for i in range(1, num+1):
+    sum+=(i/(i**2))
+print(sum)
+
+#############################################
+ pettern program
+ 
+for i in range(1,5):
+    for j in range (1,i+1):
+      print(i,end="")
+    print("\n")"""
+##################################################
