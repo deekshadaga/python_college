@@ -1,0 +1,16 @@
+#wap to print each letter in your name
+fname="deeksha"
+lname="daga"
+length=len(fname) 
+for i in range(0,length):
+    print(fname[i])
+print(fname+lname)
+print("hello {} {} ,welcome to python class".format(fname,lname))
+#or
+print("hello "+fname+ " "+lname+ ",welcome to python class")
+print(fname*3)
+#different ids of name after values are changed shows that strings are inmutable
+print(id(fname))
+fname="dee"
+print(fname)
+print(id(fname))
