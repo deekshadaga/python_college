@@ -1,0 +1,71 @@
+
+age=10
+print("age:{}".format(age))
+print("age: %d",%(age))
+
+
+str1="welcome To pYthon clasS , welcome to python , welcome"
+str2="1234"
+str3="18bcon006"
+str4="welcomeTopYthonclasS"
+str5="HELLO5"
+str6="     18bcon006     "
+print(str1[2])
+print(str1[-3])
+print(str1.capitalize())
+print(str1.title())
+print(str1.upper())
+print(str1.lower())
+print(str1.swapcase())
+#to check if the string is alphanumeric
+print(str1.isalnum()) #because of space it is false
+print(str2.isalnum())
+print(str3.isalnum())
+print(str4.isalnum())
+print(str1.isalpha())
+print(str2.isalpha())
+print(str3.isalpha())
+print(str4.isalpha())#as there are no spaces it is true
+print(str2.isdigit())
+print(str4.isdigit())
+print(str2.isalpha())
+print(str4.islower())
+print(str4.isupper())
+print(str5.isupper())
+print(len(str1))
+print(len(str4))
+print(max(str1))#capitals are smaller than small alphabets so w instead of Y
+print(min(str1))#space has small ascii value instead of any letter
+#syntax=str.center(width,"fill")
+print(str3.center(21,"*"))
+print(str3.center(10,"*"))
+print(str3.center(11,"*"))
+#str.count(str,beg,end)
+print(str1.count("welcome",0,len(str1)))
+print(str1.count("python",0,len(str1)))
+#str.find
+print(str1.find("python",0,len(str1)))
+print(str1.find("welcome",0,len(str1)))
+print(str1.endswith("me",0,len(str1))) #case sensitive
+print(str1.endswith("Me",0,len(str1))) #case sensitive
+print(str1.endswith("py",0,len(str1)))
+print(str1.startswith("we",0,len(str1)))
+print(str1.startswith("me",0,len(str1)))
+print(str6.strip())#removes white spaces
+print(str6.lstrip())
+print(str6.rstrip())
+print(str1.split(" "))
+print(type(str1.split(" ")))#output in form of list
+print(str1.join(['123','456','789','101']))
+print(type(str1.join(" ")))
+
+#to print my name as d*e*e*k*s*h*a*
+name="deeksha"
+print("*".join(name))
+print("*".join("deeksha"))
+
+name="deekshadaga"
+print(name[0:5])#last index is not included so 0 to 4 will be printed
+print(name[-1:])
+print(name[:-1])
+print(name[: :-1])
