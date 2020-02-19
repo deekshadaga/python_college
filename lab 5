@@ -1,0 +1,13 @@
+#wap that defines a list of the contries and check wether a country is member of brics or not 
+country=["brazil","austria","australia","india","russia","france"]
+brics=["brazil","russia","india", "china" ,"south africa"]
+for i in country:
+    for j in brics:
+        if(i==j):
+            print("{} is a part of brics".format(i))
+            
+#wap to print index at which a particular value exists if the value exists in multiple locations in the list , print all indices,also count no. of times the value exist
+l=[1,2,3,4,5,6,5,4,3,2,1]
+
+
+
