@@ -18,7 +18,7 @@ if(sum==n):
 else:
     print("not armstrong no.")
     
-#wap to check if a no. is armstrong or not
+#wap to check if a no. is palindrome or not
 rem=0
 rev=0
 n=int(input("enter a no: "))
