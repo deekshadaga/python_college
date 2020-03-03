@@ -6,8 +6,34 @@ for i in country:
         if(i==j):
             print("{} is a part of brics".format(i))
             
-#wap to print index at which a particular value exists if the value exists in multiple locations in the list , print all indices,also count no. of times the value exist
-l=[1,2,3,4,5,6,5,4,3,2,1]
 
 
+#wap to check whether a no is positive zero or negative
+n=int(input("enter a number: "))
+if(n==0):
+  print("zero")
+elif(n>0):
+  print("positive")
+else:
+  print("negative")
+
+
+
+n=int(input("enter a nnumber from 1 to 7: "))
+if(n==1):
+  print("monday")
+elif(n==2):
+  print("tuesday")
+elif(n==3):
+  print("wednesday")
+elif(n==4):
+  print("thursday")
+elif(n==5):
+  print("friday")
+elif(n==6):
+  print("saturday")
+elif(n==7):
+  print("sunday")
+else:
+  print("invalid number")
 
