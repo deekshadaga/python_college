@@ -1,0 +1,102 @@
+def diff():
+  a=10
+  b=6
+  print(a-b)
+diff()
+
+
+
+a=10
+b=6
+def diff(a,b):
+  print(a-b)
+diff(a,b)
+
+
+
+
+a=10
+def diff(a,b=6):
+  print(a-b)
+diff(a,b)
+
+
+
+
+#4 types of arguments are:
+required argument
+keyword argument
+default argument
+variable length argument
+
+
+
+
+#keyword argument
+def detail(name,enroll,mob):
+           print(name)
+           print(enroll)
+           print(mob)
+detail(enroll=1234,mob=1234567890,name="dee")
+
+
+#if keyword not used
+def detail(name,enroll,mob):
+           print(name)
+           print(enroll)
+           print(mob)
+detail(1234,1234567890,"dee")
+
+
+
+#default argument
+def detail(name,enroll,mob,course="btech"):
+           print(name)
+           print(enroll)
+           print(mob)
+           print(course)
+detail("dee",1234,1234567890,"cse")
+print("\n")
+detail("dee",1234,1234567890)
+
+
+
+#variable length --> when we use arbitrary arguments or variable length arguments ,then the function definition 
+uses an * before a parameter name. the arbitrary no of arguments passed to the functions basically forms a tuple
+
+
+
+#variable length argument
+def fav_movie(name,*movie_list):
+  print(name)
+  for i in movie_list:
+    print(i)
+  print(movie_list)
+fav_movie("dee","sooryavansham")
+fav_movie("pri","ana","conj")
+
+
+
+# if we use all type of arguments in a single function then we must follow this sequence only required,keyword,default,variable length
+# if we use keyword argument once then we have to give all arguments with keyword
+valid-->
+d(1,name="dee")
+invalid-->
+d(sno=1,"dee")
+
+
+
+#error
+def detail(sno,name,enroll,mob,course="btech",*subject):
+           print(sno)
+           print(name)
+           print(enroll)
+           print(mob)
+           print(course)
+           print(subject)
+detail(1,name="dee",enroll=1234,mob=1234567890,course=" ",subject=('c','cc','py'))
+
+
+
+
+#local variable(scope is only in that particular function) and global variable(defined outside function)
