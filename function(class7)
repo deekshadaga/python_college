@@ -100,3 +100,15 @@ detail(1,name="dee",enroll=1234,mob=1234567890,course=" ",subject=('c','cc','py'
 
 
 #local variable(scope is only in that particular function) and global variable(defined outside function)
+
+
+
+
+#homework
+1) wap to return the full name of a person using function(fname,mname,lname)
+2) wap to convert time into minutes
+3) wap to print the following pattern using default argument
+%%%%%%
+^^^^^^
+^^^^^^^^^^
+^^^^^^^^^^
