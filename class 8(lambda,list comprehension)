@@ -1,0 +1,22 @@
+#list comprehension
+l1=[1,2,3,4]
+l2=[2,3,4,5]
+res=[i**3 for i in l1]
+print(res)
+#print common elements of list l1 and l2
+
+
+
+
+def cube(x):
+  return x**3
+
+# or
+
+a=lambda x:x**3
+b=lambda x,y:x+y
+print(type(a))
+
+print(a(5))
+print(cube(5))
+print(b(2,3))
