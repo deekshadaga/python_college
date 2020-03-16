@@ -1,0 +1,33 @@
+"""#it is a mutable data type
+d1={}
+d1=dict()#dict is dictionary's keyword
+#syntax :
+#d1={'key1':'val1','key2':'val2'}
+#d1=dict([('key1','val1')('key2','val2')]) using list and tuple
+d1={"name":"abc","city":"jaipur","counry":"india"}
+#add
+d1["profession"]="teaching"
+#modify
+d1["name"]="xyz" #using assignment operator overwrite value
+print(d1)
+#append
+d1.update({"k1":"v1","k2":"v2"})
+print(d1)
+#d1['key']# key used to fetch data 
+#d1.get('key')
+#d1.get('key','error msg')# if key is found it prints value otherwise prints the error message
+print(d1.keys())#returns a list of all the keys of our dictionary
+for i in d1:#takes key in d1 
+    print (i,d1[i])
+del d1['k2']
+print(d1)
+print(d1.values())# returns list of all the values
+print(d1.items())
+print(d1.pop('k1'))
+print(d1)
+print(d1.sort())"""
+d1={}
+s="www.google.com"
+for i in s:
+    d1.update({i:s.count(i)})
+print(d1)
