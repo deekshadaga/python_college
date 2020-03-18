@@ -1,0 +1,50 @@
+#list comprehension
+list1=[1,2,3]
+res=[i**2 for i in list1]
+print(res)
+
+
+#lambda function
+
+#limitations-->
+#when you need to implement easy functionality
+#easy code
+
+#it is a way to create anonymous function ie functions without name
+#they are used with map,filter,reduce
+#used to create small , one time and anonymous function objects in python
+
+#syntax--> lambda arguments: expression
+
+#usual way
+def sq(x):
+  return x*x
+a=sq(5)
+print(a)
+
+#lambda function
+sq=lambda x:x**2
+print(sq(3))
+print(type(sq))#now this variable's type is function
+
+
+
+'''
+filter-->
+filter() function in python takes in a function and a list of arguments.this offers an elegant way to filter out all the elements of a 
+sequence for which the function returns true
+syntax : filter(function,sequence)
+'''
+
+list1=[]
+for i in range(2,22):
+  if(i%2==0 or i%4==0):
+    list1.append(i)
+print(list1)
+
+#or
+
+def f(x):
+  return(x%2==0 or x%4==0)   #2%2==0 return1
+result=list(filter(f,range(2,22)))
+print(result)
