@@ -1,0 +1,30 @@
+#map
+l1=[1,2,3,4,5]
+l2=list(map(lambda x:x*10,l1))
+print(l2)
+
+
+ip=[15,12,25,16]
+op=list(map(lambda x:x+20,ip))
+print(op)
+
+num=[1,2,3,4]
+res=map(lambda n:n+n,num)
+print(res)
+print(type(res))
+print(list(res))
+
+#function to add numbers of 2 list
+list1=[1,2,3,4,5]
+list2=[6,7,8,9,10]
+result=tuple(map(lambda x,y:x+y,list1,list2))
+print(result)
+
+#reduce
+from functools import reduce
+list1=[1,2,3,4,5]
+print(reduce(lambda x,y:x+y,list1))
+
+from functools import reduce
+list1=['a','b','c','d','e']
+print(reduce(lambda x,y:x+y,list1))
