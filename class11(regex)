@@ -1,0 +1,26 @@
+#match()-starting of string ,even in multiline mode it checks only the beginning of string
+#search()-first occurence
+#sub()-substitute with a new value
+#findall()-finds all occurances of that string
+
+flags : everyone function has this option
+re.I or re.Ignorecase -ignores the case of letters
+re.S or
+import re
+
+pattern ='python'
+s1='PYTHON i love python.\npython PYTHON language not Python animal'
+print(s1)
+#re.match(pattern,string,flags=0)
+result=re.match(pattern,s1,re.I)#returns match object ,re.I=re.IGNORECASE
+print(type(result))
+print(result.group())#to print match object
+#re.search(pattern,string,flags=0)
+result=re.search(pattern,s1,re.MULTILINE)#returns match object
+print(type(result))
+print(result)
+print(result.group())#to print match object
+#re.findall(pattern,string,flags=0)
+result=re.findall(pattern,s1,re.MULTILINE)#returns list
+print(type(result))
+print(result)
