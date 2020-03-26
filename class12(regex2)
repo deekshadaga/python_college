@@ -1,0 +1,51 @@
+import re
+
+#metacharacters :
+
+#dot character-->
+
+s1='i love python'
+result=re.findall(r'.',s1)
+print(result)
+
+s1='i love python\ni love python'
+result=re.findall(r'.',s1)#\n not shown
+print(result)
+result=re.findall(r'.',s1,re.DOTALL)#\n shown as this flag instructs . to treat all of them as a character
+print(result)
+
+s1='i @@@lo??????ve....... py***********thon\ni lov\te python'
+result=re.findall(r'.',s1)#\n not shown even when \t is shown
+print(result)
+result=re.findall(r'.',s1,re.DOTALL)#\n shown
+print(result)
+
+s1='i @@@lo??????ve....... py***********thon\ni lov\te python'
+result=re.match(r'.',s1,re.DOTALL)
+print(result.group())
+s1='\ni @@@lo??????ve....... py***********thon\ni lov\te python'
+result=re.match(r'.',s1,re.DOTALL)
+print(result.group())
+
+s1='zz @@@lo??????ve....... '
+s2='py***********thon\ni lov\te python'
+s3='abcde'
+pattern=r'..'
+result=re.match(pattern,s1)
+print(result)
+result=re.match(pattern,s2)
+print(result)
+result=re.match(pattern,s3)
+print(result)
+
+#caret character -->
+s1='xyz......qwerty'
+s3='xyz......qwerty\nxyz===qwerty'
+s2='abc....xyz'
+pattern=r'^xyz'
+result=re.findall(pattern,s1)
+print(result)
+result=re.findall(pattern,s2)
+print(result)
+result=re.findall(pattern,s3)
+print(result)
