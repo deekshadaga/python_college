@@ -1,0 +1,19 @@
+s1='i @@@lo??????ve....... py***********thon\ni lov\te python'
+result=re.findall(r'\.',s1)#to get all '.' from string we use backslash
+print(result)
+
+s1='I love python.\nI love python.'
+pattern=r'^I'
+result=re.findall(pattern,s1,re.MULTILINE)
+print(result)
+
+# $ - checks at the end of string
+s1='I love python\nI love python'
+result=re.findall(r'on$',s1,re.MULTILINE)
+print(result)
+
+
+#[]- checks in the string 
+s1='I love python\nI love python'
+result=re.findall(r'[a-z]',s1,re.MULTILINE)
+print(result)
