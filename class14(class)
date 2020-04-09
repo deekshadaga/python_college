@@ -1,0 +1,40 @@
+class Employee:
+    pass#to make empty classes,as classes can't be empty 
+
+#class methods and variables are created in functions
+
+emp_1=Employee()#constructor to create object of that class
+emp_2=Employee()
+
+print(emp_1)
+print(id(emp_1))
+
+print(emp_2)
+print(id(emp_2))
+
+#instance variable
+
+emp_1.first='deeksha'
+emp_1.last='daga'
+emp_1.email='hgfjfcj'
+emp_1.pay=6789
+
+emp_2.first='dee'
+emp_2.last='jain'
+emp_2.email='cffvbszdfvgbh'
+emp_2.pay=456789
+
+print(emp_1.first)
+print(emp_1.pay)
+
+print(emp_2.last)
+print(emp_2.email)
+
+#__init__ mathods are called without object calling like parameterized constructor ,it is for initializaation
+#self is passed to know which object has called it
+
+class employee:
+    def __init__(self,first,last):
+        self.first=first
+        self.last= last
+emp_1=employee('deeksha','daga')
